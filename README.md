@@ -1,4 +1,4 @@
-<img alt="himood" src="https://github.com/sikazhang/miniDemo/docs/images/mood-happy.svg" width="140">
+<img alt="himood" src="https://github.com/sikazhang/miniDemo/raw/master/docs/images/mood-happy.png" width="140">
 
 # HI MOOD
 
