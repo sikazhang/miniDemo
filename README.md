@@ -2,7 +2,7 @@
 
 # HI MOOD
 
-![npm](https://img.shields.io/static/v1?label=license&message=MIT&color=)
+![npm](https://img.shields.io/static/v1?label=license&message=MIT&color=green)
 ![npm](https://img.shields.io/static/v1?label=npm@lastest&message=1.0.2&color=blue)
 
 
