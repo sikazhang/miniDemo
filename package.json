@@ -1,0 +1,56 @@
+{
+  "name": "himood",
+  "version": "1.0.2",
+  "description": "随机生成颜文字的小可爱",
+  "main": "index.js",
+  "scripts": {
+    "compile": "rimraf packages && npx babel src --source-maps --out-dir packages/dist",
+    "changelog": "npx conventional-changelog -p angular -i CHANGLOG.md -s -r 0",
+    "build": "npm run compile && npm run changelog",
+    "docs": "docsify serve docs",
+    "release": "lerna publish"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --tab-width 2 --write",
+      "eslint --fix"
+    ]
+  },
+  "keywords": [
+    "mood",
+    "颜文字"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sikazhang/miniDemo.git"
+  },
+  "author": "sikazhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sikazhang/miniDemo/issues"
+  },
+  "homepage": "https://github.com/sikazhang/miniDemo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "conventional-changelog-cli": "^2.0.31",
+    "cz-conventional-changelog": "^3.0.2",
+    "docsify": "^4.10.2",
+    "lerna": "^3.19.0",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
