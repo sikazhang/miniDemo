@@ -10,12 +10,23 @@
 
 ## Demo
 
-## Docs
+demo online: http://life.whuzxq.com/miniExample/public/
+source codes: https://github.com/sikazhang/miniExample
 
 ## Install
 
 ```bash
 yarn add himood # OR npm install --save himood
+```
+
+## Docs
+
+```javascript
+import Himood from 'himood';
+
+const himood = new Himood();
+
+let mood = himood.setFaceRandom();
 ```
 
 ## License

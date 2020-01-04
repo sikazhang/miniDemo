@@ -2,15 +2,13 @@
  * @file demo示例
  * @author sikazhang
  */
-export default class Haha {
-    constructor() {
-        this.msg = this.setFaceRandom();
-    }
+export default class Himood {
 
     /**
      * 生成随机颜文字表情包
      *
      * @return {string} 表情包结果
+     * @public
      */
     setFaceRandom() {
         // 生成1-10的随机整数

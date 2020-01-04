@@ -1,10 +1,10 @@
 {
   "name": "himood",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "随机生成颜文字的小可爱",
   "main": "index.js",
   "scripts": {
-    "compile": "rimraf packages && npx babel src --source-maps --out-dir packages/dist",
+    "compile": "rimraf dist && npx babel src --source-maps --out-dir dist",
     "changelog": "npx conventional-changelog -p angular -i CHANGLOG.md -s -r 0",
     "build": "npm run compile && npm run changelog",
     "docs": "docsify serve docs",
@@ -41,8 +41,8 @@
     "@babel/preset-env": "^7.7.7",
     "conventional-changelog-cli": "^2.0.31",
     "cz-conventional-changelog": "^3.0.2",
-    "docsify": "^4.10.2",
-    "lerna": "^3.19.0",
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "npx vuepress build docs",
     "rimraf": "^3.0.0"
   },
   "dependencies": {
